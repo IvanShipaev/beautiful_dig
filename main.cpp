@@ -23,7 +23,7 @@
 #define NDIGIT_SKIP 1       /// Number of characters to skip
 #define MAX_SUM     ((BASE-1) * NDIGIT_COMP + 1)  /// Size array for combinations of different sums
 
-static unsigned sums[MAX_SUM]; /// Array for combinations of different sums
+static uint64_t sums[MAX_SUM]; /// Array for combinations of different sums
 
 /**
  * @brief Initialize array for combinations of different sums
@@ -43,7 +43,7 @@ void init_sums(unsigned iter, unsigned cnt)
 
 int main()
 {
-    unsigned cnt_beautiful = 0;
+    uint64_t cnt_beautiful = 0;
 
     init_sums(NDIGIT_COMP, 0);
 
